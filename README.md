@@ -6,6 +6,8 @@
 
 This GitHub action is to build fresh images of latest OpenWrt snapshot using imagebuilder.
 
+![Asrock_Bild](https://user-images.githubusercontent.com/67478561/207076897-3649c6ed-2181-4a45-9825-fd9c7656e79f.jpg)
+
 Following packages are already installed, so that you do not need to install them via the command line afterwards: 
 
 Added features | Package names
