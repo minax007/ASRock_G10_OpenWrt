@@ -1,4 +1,4 @@
-name: Build OpenWrt
+name: Build OpenWrt with Docker
 
 on:
  # schedule:
