@@ -1,8 +1,7 @@
 [![Build OpenWrt](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-snapshot.yml/badge.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-snapshot.yml)
 [![Build OpenWrt](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-release.yml/badge.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-release.yml)
 [![release](https://img.shields.io/github/v/release/minax007/ASRock_G10_OpenWrt.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/releases)
-
-
+#
 # OpenWrt for ASRock G10
 
 This GitHub action is to build OpenWrt based on snapshot or official releases using imagebuilder.
