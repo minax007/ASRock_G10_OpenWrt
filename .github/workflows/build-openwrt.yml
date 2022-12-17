@@ -12,7 +12,7 @@ env:
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
-  PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-access-control"
+  PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-temp-status luci-app-access-control"
 #  PACKAGES_TYPE2: "luci luci-theme-material luci-app-nlbwmon luci-app-sqm wpad-mesh-wolfssl mtr -wpad-basic-wolfssl"
     
 jobs:
@@ -42,16 +42,11 @@ jobs:
       run: |
         curl -O "https://downloads.openwrt.org/snapshots/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/version.buildinfo"
         echo "OPENWRT_VERSION=$(cut -c-6 <<< cat version.buildinfo)" >> $GITHUB_ENV 
-  
-  
-  
-    - name: Download External Packages
-#      working-directory: openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64
+     
+    - name: Include External ipk-Packages
       run: |
         cat external-package-urls.txt | xargs wget -P /mnt/workdir/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64/packages
-  
-  
-  
+    
     - name: Build the image of type 1
       id: type1
       run: |
