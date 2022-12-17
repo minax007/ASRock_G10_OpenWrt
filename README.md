@@ -1,13 +1,13 @@
-# [![Build OpenWrt](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-snapshot.yml/badge.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-snapshot.yml)
+[![Build OpenWrt](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-snapshot.yml/badge.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-snapshot.yml)
 [![Build OpenWrt](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-release.yml/badge.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/actions/workflows/build-release.yml)
 [![release](https://img.shields.io/github/v/release/minax007/ASRock_G10_OpenWrt.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/releases)
 # OpenWrt for ASRock G10
 
-This GitHub action is to build OpenWrt based on snapshot or official releases using imagebuilder.
+These GitHub actions are for building OpenWrt based on snapshot or official releases using imagebuilder.
 
 ![20150722-1](https://user-images.githubusercontent.com/67478561/207081182-b4a74183-71c3-4c18-81b4-080ad025a858.jpg)
 
-Following packages are already installed, so that you do not need to install them via the command line afterwards: 
+Following packages are already included in the builds: 
 
 Added features | Package names
 ------------ | -------------
