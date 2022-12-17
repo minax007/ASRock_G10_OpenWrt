@@ -12,7 +12,7 @@ env:
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
-  PACKAGES_TYPE1: "luci luci-theme-material luci-app-nlbwmon luci-app-adblock tcpdump openssh-sftp-server"
+  PACKAGES_TYPE1: "luci luci-theme-material luci-app-nlbwmon luci-app-adblock tcpdump openssh-sftp-server luci-app-temp-status luci-app-cpu-status-mini"
 #  PACKAGES_TYPE2: "luci luci-theme-material luci-app-nlbwmon luci-app-sqm wpad-mesh-wolfssl mtr -wpad-basic-wolfssl"
     
 jobs:
@@ -36,6 +36,17 @@ jobs:
         curl -O "https://downloads.openwrt.org/snapshots/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64.tar.xz"
         tar xvaf openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64.tar.xz
         ln -sf /mnt/workdir/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64 $GITHUB_WORKSPACE/openwrt
+ 
+ 
+ 
+ 
+    - name: Include special Apps
+      run: |
+        git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
+        git clone https://github.com/gSpotx2f/luci-app-cpu-status-mini package/luci-app-cpu-status-mini
+      # git clone https://github.com/k-szuster/luci-access-control.git package/luci-app-temp-status
+ 
+ 
  
     # Pull the first six letters from the version.buildinfo-file for naming the release e. g. "R16767"
     - name: Download version info
