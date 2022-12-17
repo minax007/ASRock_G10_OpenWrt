@@ -40,10 +40,10 @@ jobs:
  
  
  
-    - name: Include special Apps
-      run: |
-        git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
-        git clone https://github.com/gSpotx2f/luci-app-cpu-status-mini package/luci-app-cpu-status-mini
+#    - name: Include special Apps
+#      run: |
+#        git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
+#        git clone https://github.com/gSpotx2f/luci-app-cpu-status-mini package/luci-app-cpu-status-mini
       # git clone https://github.com/k-szuster/luci-access-control.git package/luci-app-temp-status
  
  
@@ -58,6 +58,10 @@ jobs:
       id: type1
       run: |
         cd openwrt
+
+        git clone https://github.com/gSpotx2f/luci-app-temp-status.git package/luci-app-temp-status
+        git clone https://github.com/gSpotx2f/luci-app-cpu-status-mini package/luci-app-cpu-status-mini
+
         make image PROFILE="${{ env.PROFILE }}" PACKAGES="${{ env.PACKAGES_TYPE1 }}"
         mv bin/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/openwrt-ipq806x-generic-asrock_g10-squashfs-nand-sysupgrade.bin OpenWrt_ASRock_G10_${{ env.OPENWRT_VERSION }}_sysupgrade.bin
 #    - name: Build the image of type 2
