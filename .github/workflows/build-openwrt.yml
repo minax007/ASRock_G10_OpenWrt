@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  TYPE: "snapshots" # TYPE options: "snapshots" or "releases/22.03.2"
+  TYPE: "releases/22.03.2" # TYPE options: "snapshots" or "releases/22.03.2"
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
