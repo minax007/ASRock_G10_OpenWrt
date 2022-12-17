@@ -48,7 +48,7 @@ jobs:
     - name: Download External Packages
       working-directory: /mnt/workdir/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64
       run: |
-        cat external-package-urls.txt | xargs wget -P packages
+        cat https://github.com/minax007/ASRock_G10_OpenWrt/blob/main/external-package-urls.txt | xargs wget -P packages
   
   
   
