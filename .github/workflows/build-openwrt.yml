@@ -9,10 +9,10 @@ on:
   workflow_dispatch:
 
 env:
+  TYPE: "snapshots" # TYPE options: "snapshots" or "releases/22.03.2"
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
-  TYPE: "snapshots"
   PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-access-control luci-app-temp-status"
 #  PACKAGES_TYPE2: "luci luci-theme-material luci-app-nlbwmon luci-app-sqm wpad-mesh-wolfssl mtr -wpad-basic-wolfssl"
     
@@ -68,7 +68,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.TYPE }} ${{ env.OPENWRT_VERSION }}
+        tag_name: ${{ env.TYPE }}_${{ env.OPENWRT_VERSION }}
         release_name: OpenWrt ASRock G10 (${{ env.TYPE }} ${{ env.OPENWRT_VERSION }})
         body: |
           This release is based on OpenWrt snapshot ${{ env.OPENWRT_VERSION }}.
