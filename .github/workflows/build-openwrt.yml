@@ -12,6 +12,7 @@ env:
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
+  TYPE: "snapshots"
   PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-access-control luci-app-temp-status"
 #  PACKAGES_TYPE2: "luci luci-theme-material luci-app-nlbwmon luci-app-sqm wpad-mesh-wolfssl mtr -wpad-basic-wolfssl"
     
@@ -33,14 +34,14 @@ jobs:
     - name: Download imagebuilder
       working-directory: /mnt/workdir
       run: |
-        curl -O "https://downloads.openwrt.org/snapshots/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64.tar.xz"
+        curl -O "https://downloads.openwrt.org/${{ env.TYPE }}/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64.tar.xz"
         tar xvaf openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64.tar.xz
         ln -sf /mnt/workdir/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64 $GITHUB_WORKSPACE/openwrt
  
     # Pull the first six letters from the version.buildinfo-file for naming the release e. g. "R16767"
     - name: Download version info
       run: |
-        curl -O "https://downloads.openwrt.org/snapshots/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/version.buildinfo"
+        curl -O "https://downloads.openwrt.org/${{ env.TYPE }}/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/version.buildinfo"
         echo "OPENWRT_VERSION=$(cut -c-6 <<< cat version.buildinfo)" >> $GITHUB_ENV 
      
     - name: Include External ipk-Packages
