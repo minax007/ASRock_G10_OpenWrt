@@ -1,4 +1,4 @@
-name: Build OpenWrt Snapshots
+name: Build OpenWrt Snapshot
 
 on:
  # schedule:
