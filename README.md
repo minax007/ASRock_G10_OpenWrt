@@ -5,7 +5,7 @@
 
 These GitHub actions are for building OpenWrt based on snapshot or official releases using imagebuilder.
 
-![20150722-1](https://user-images.githubusercontent.com/67478561/207081182-b4a74183-71c3-4c18-81b4-080ad025a858.jpg)
+![Unbenannt](https://user-images.githubusercontent.com/67478561/208256549-b7e62f22-a12d-448e-8c85-1b1aca04fd76.jpg)
 
 Following packages are already included in the builds: 
 
