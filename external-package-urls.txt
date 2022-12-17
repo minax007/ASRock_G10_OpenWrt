@@ -1,3 +1,9 @@
-https://github.com/minax007/OpenWrt_Packages/blob/main/luci-app-cpu-status-mini_0.1-4_all.ipk
-https://github.com/minax007/OpenWrt_Packages/blob/main/luci-app-temp-status_0.3-5_all.ipk
-https://github.com/minax007/OpenWrt_Packages/blob/main/luci-app-access-control_0.4.3_all.ipk
+https://github.com/gSpotx2f/packages-openwrt/raw/master/current/luci-app-cpu-status-mini_0.1-4_all.ipk
+
+https://github.com/k-szuster/luci-access-control/releases/download/0.4.3sk/luci-app-access-control_0.4.3_all.ipk
+
+https://github.com/gSpotx2f/packages-openwrt/blob/master/current/luci-app-temp-status_0.3-5_all.ipk
+
+# https://github.com/minax007/OpenWrt_Packages/blob/main/luci-app-cpu-status-mini_0.1-4_all.ipk
+# https://github.com/minax007/OpenWrt_Packages/blob/main/luci-app-temp-status_0.3-5_all.ipk
+# https://github.com/minax007/OpenWrt_Packages/blob/main/luci-app-access-control_0.4.3_all.ipk
