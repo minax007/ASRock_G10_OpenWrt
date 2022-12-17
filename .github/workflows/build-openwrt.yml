@@ -57,7 +57,7 @@ jobs:
       run: |
         cd openwrt
         
-        cat https://github.com/gSpotx2f/packages-openwrt/raw/master/current/luci-app-cpu-status-mini_0.1-4_all.ipk | xargs wget -P packages
+        git clone https://github.com/gSpotx2f/packages-openwrt/raw/master/current/luci-app-cpu-status-mini_0.1-4_all.ipk packages
         
         make image PROFILE="${{ env.PROFILE }}" PACKAGES="${{ env.PACKAGES_TYPE1 }}"
         mv bin/targets/${{ env.BOARD }}/${{ env.SUBTARGET }}/openwrt-ipq806x-generic-asrock_g10-squashfs-nand-sysupgrade.bin OpenWrt_ASRock_G10_${{ env.OPENWRT_VERSION }}_sysupgrade.bin
