@@ -46,7 +46,7 @@ jobs:
   
   
     - name: Download External Packages
-      working-directory: openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64
+      working-directory: /mnt/workdir/openwrt-imagebuilder-${{ env.BOARD }}-${{ env.SUBTARGET }}.Linux-x86_64
       run: |
         cat external-package-urls.txt | xargs wget -P packages
   
