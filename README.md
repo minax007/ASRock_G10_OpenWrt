@@ -18,10 +18,10 @@ Added features | Package names
 __________________________________________________________________
 **Official OpenWrt:**
 
-Image: https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+FW: https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
 ipq806x builds: https://downloads.openwrt.org/snapshots/targets/ipq806x/generic/
 __________________________________________________________________
 **ImmortalWrt:**
 
-Image: https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+FW: https://firmware-selector.immortalwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
 ipq806x builds: https://downloads.openwrt.org/snapshots/target/ipq806x/generic/
