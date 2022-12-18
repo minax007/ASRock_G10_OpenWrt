@@ -19,9 +19,11 @@ __________________________________________________________________
 **Official OpenWrt:**
 
 FW: https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+
 ipq806x builds: https://downloads.openwrt.org/snapshots/targets/ipq806x/generic/
 __________________________________________________________________
 **ImmortalWrt:**
 
 FW: https://firmware-selector.immortalwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+
 ipq806x builds: https://downloads.openwrt.org/snapshots/target/ipq806x/generic/
