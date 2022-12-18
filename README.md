@@ -16,10 +16,12 @@ Added features | Package names
 **LuCI Bandwidth Monitor** | luci-app-nlbwmon
 **LuCI Adblock** | luci-app-adblock
 __________________________________________________________________
-**Official OpenWrt snapshot build without LuCI:**
+**Official OpenWrt:**
 
-https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+Image: https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+ipq806x builds: https://downloads.openwrt.org/snapshots/targets/ipq806x/generic/
 __________________________________________________________________
-**Official OpenWrt snapshot download directory for ipq806x routers, which includes the imagebuilder used in this action script:**
+**ImmortalWrt:**
 
-https://downloads.openwrt.org/snapshots/targets/ipq806x/generic/
+Image: https://firmware-selector.openwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
+ipq806x builds: https://downloads.openwrt.org/snapshots/target/ipq806x/generic/
