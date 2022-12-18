@@ -26,4 +26,4 @@ __________________________________________________________________
 
 FW: https://firmware-selector.immortalwrt.org/?version=SNAPSHOT&target=ipq806x%2Fgeneric&id=asrock_g10
 
-ipq806x builds: [https://downloads.immortalwrt.org/snapshots/target/ipq806x/generic/](https://downloads.immortalwrt.org/snapshots/targets/ipq806x/generic/)
+ipq806x builds: https://downloads.immortalwrt.org/snapshots/target/ipq806x/generic/
