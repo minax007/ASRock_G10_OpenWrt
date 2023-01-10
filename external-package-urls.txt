@@ -7,3 +7,9 @@ https://github.com/minax007/packages/raw/main/current/luci-app-temp-status_0.3-5
 https://github.com/minax007/packages/raw/main/current/internet-detector_0.6-0_all.ipk
 
 https://github.com/minax007/packages/raw/main/current/luci-app-internet-detector_0.6-0_all.ipk
+
+https://github.com/minax007/packages/raw/main/current/kmod-oaf_5.10.146-1_arm_cortex-a15_neon-vfpv4.ipk
+
+https://github.com/minax007/packages/raw/main/current/appfilter_5.0.2-1_arm_cortex-a15_neon-vfpv4.ipk
+
+https://github.com/minax007/packages/raw/main/current/luci-app-oaf_5.0.2_all.ipk
