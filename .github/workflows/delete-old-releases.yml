@@ -1,4 +1,5 @@
-name: Delete old releases
+
+name: Delete-Old-Releases
 
 on:
  # schedule:
@@ -7,6 +8,12 @@ on:
     branches:
       - master
   workflow_dispatch:
+
+env:
+  BOARD: "ipq806x"
+  SUBTARGET: "generic"
+  PROFILE: "asrock_g10"
+  PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-access-control luci-app-temp-status internet-detector luci-app-internet-detector"
     
 jobs:
   build:
@@ -14,7 +21,8 @@ jobs:
     if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
-    - name: Delete_old_releases
+    - name: Delete old releases
+      id: delete-old-releases
       uses: dev-drprasad/delete-older-releases@v0.2.0
   with:
     repo: minax007/ASRock_G10_OpenWrt
