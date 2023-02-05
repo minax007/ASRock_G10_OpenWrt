@@ -1,0 +1,24 @@
+name: Delete old releases
+
+on:
+ # schedule:
+ #   - cron: "0 2 * * *"
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    if: github.event.repository.owner.id == github.event.sender.id
+
+    steps:
+    - name: Delete_old_releases
+      uses: dev-drprasad/delete-older-releases@v0.2.0
+  with:
+    repo: minax007/ASRock_G10_OpenWrt
+    keep_latest: 1
+    delete_tag_pattern:  # defaults to ""
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
