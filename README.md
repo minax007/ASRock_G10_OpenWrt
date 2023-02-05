@@ -1,9 +1,7 @@
-[![release](https://img.shields.io/github/v/release/minax007/ASRock_G10_OpenWrt.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/releases)
-# OpenWrt for ASRock G10
-
-These GitHub actions are for building OpenWrt based on snapshot or official releases using imagebuilder.
-
 ![Unbenannt](https://user-images.githubusercontent.com/67478561/208256549-b7e62f22-a12d-448e-8c85-1b1aca04fd76.jpg)
+# OpenWrt for ASRock G10
+[![release](https://img.shields.io/github/v/release/minax007/ASRock_G10_OpenWrt.svg)](https://github.com/minax007/ASRock_G10_OpenWrt/releases)
+These GitHub actions are for building OpenWrt based on snapshot or official releases using imagebuilder.
 
 Following packages are already included in the builds: 
 
