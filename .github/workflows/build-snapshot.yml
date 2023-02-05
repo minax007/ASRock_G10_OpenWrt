@@ -87,15 +87,6 @@ jobs:
         asset_name: OpenWrt_ASRock_G10_${{ env.OPENWRT_VERSION }}_sysupgrade.bin
         asset_content_type: application/bin
 
-    - name: Delete old releases
-      id: delete-old-releases
-      uses: dev-drprasad/delete-older-releases@v0.2.0
-      with:
-        keep_latest: 1
-        delete_tags: true
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
 #    - name: Upload type2 Asset
 #      id: upload-release-asset-type2
 #      uses: actions/upload-release-asset@v1
