@@ -30,6 +30,7 @@ jobs:
       run: |
         sudo mkdir -p /mnt/workdir
         sudo chown $USER:$GROUPS /mnt/workdir
+        chmod -R 777 /mnt/workdir
     - name: Download imagebuilder
       working-directory: /mnt/workdir
       run: |
