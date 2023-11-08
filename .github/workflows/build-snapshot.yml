@@ -31,6 +31,9 @@ jobs:
         sudo mkdir -p /mnt/workdir
         sudo chown $USER:$GROUPS /mnt/workdir
         chmod -R 777 /mnt/workdir
+        sudo mkdir -p /mnt/workdir/openwrt-imagebuilder-ipq806x-generic.Linux-x86_64/tmp/
+        sudo chown $USER:$GROUPS /mnt/workdir/openwrt-imagebuilder-ipq806x-generic.Linux-x86_64/tmp/
+        chmod -R 777 /mnt/workdir/openwrt-imagebuilder-ipq806x-generic.Linux-x86_64/tmp/
     - name: Download imagebuilder
       working-directory: /mnt/workdir
       run: |
