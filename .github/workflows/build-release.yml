@@ -9,12 +9,11 @@ on:
   workflow_dispatch:
 
 env:
-  VERSION: "23.05.0"
+  VERSION: "23.05.2"
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
-  PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-access-control luci-app-temp-status internet-detector luci-app-internet-detector luci-compat"
-#  PACKAGES_TYPE2: "luci luci-theme-material luci-app-nlbwmon luci-app-sqm wpad-mesh-wolfssl mtr -wpad-basic-wolfssl"
+  PACKAGES_TYPE1: "luci luci-theme-material luci-app-adblock tcpdump luci-app-nlbwmon openssh-sftp-server luci-app-cpu-status-mini luci-app-access-control luci-app-temp-status internet-detector luci-app-internet-detector luci-compat openvpn-openssl luci-app-openvpn"#  PACKAGES_TYPE2: "luci luci-theme-material luci-app-nlbwmon luci-app-sqm wpad-mesh-wolfssl mtr -wpad-basic-wolfssl"
     
 jobs:
   build:
