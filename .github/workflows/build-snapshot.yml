@@ -65,7 +65,9 @@ jobs:
 
     - name: Create Release
       id: create_release
-      uses: actions/create-release@v1
+   #  uses: actions/create-release@v1   //deprecated
+      uses: comnoco/create-release-action@main
+
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
@@ -79,7 +81,8 @@ jobs:
 
     - name: Upload type1 Asset
       id: upload-release-asset-type1
-      uses: actions/upload-release-asset@v1
+   #  uses: actions/create-release@v1   //deprecated
+      uses: comnoco/create-release-action@main
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
