@@ -1,4 +1,4 @@
-name: Build OpenWrt Snapshot
+name: Build OpenWrt Snapshot non-ct
 
 on:
  # schedule:
