@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 env:
-  VERSION: "23.05.4"
+  VERSION: "23.05.5"
   BOARD: "ipq806x"
   SUBTARGET: "generic"
   PROFILE: "asrock_g10"
