@@ -69,8 +69,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ env.VERSION }}_release
-        release_name: OpenWrt ASRock G10 (${{ env.VERSION }}) release
+        tag_name: ${{ env.VERSION }}_release_LEAN
+        release_name: OpenWrt ASRock G10 (${{ env.VERSION }}) LEAN release
         body: |
           This release is based on OpenWrt ${{ env.VERSION }}.
                     
